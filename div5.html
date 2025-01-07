@@ -22,33 +22,6 @@
         justify-content: center;
         align-items: center;
       }
-      .main {
-        width: 900px;
-        height: 600px;
-        background-color: lightcoral;
-        display: flex;
-      }
-      .aside {
-        width: 169px;
-        height: 600px;
-        background-color: darkblue;
-      }
-      .section {
-        width: 731px;
-        height: 600px;
-        background-color: darkcyan;
-      }
-      h2 {
-        width: 169px;
-        height: 43px;
-      }
-      .last {
-        height: 125px;
-      }
-      .cate{
-        width: 731px;
-        height: 77px;
-      }
     </style>
   </head>
   <body>
@@ -62,28 +35,130 @@
       <h3>자료실</h3>
     </div>
     <hr />
-    <br />
+    <style>
+      .main {
+        width: 900px;
+        height: 600px;
+     
+        display: flex;
+      }
+      .aside {
+        width: 169px;
+        height: 600px;
+     
+      }
+      .section {
+        width: 731px;
+        height: 600px;
+      
+      }
+      h2 {
+        width: 169px;
+        height: 43px;
+      }
+      .last {
+        height: 125px;
+      }
+      .cate {
+        width: 731px;
+        height: 70px;
+      }
+      .img {
+        width: 731px;
+        height: 70px;
+      }
+      .write {
+        width: 731px;
+        height: 200px;
+
+        display: flex;
+        justify-content: center;
+      }
+      .list {
+        width: 650px;
+
+        list-style: none;
+      }
+      li {
+        display: flex;
+      }
+      .cell {
+        width: 150px;
+        text-align: center;
+      }
+      .wd {
+        width: 500px;
+        text-align: left;
+      }
+      .sub {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
     <div class="main">
       <div class="aside">
-        <img src="images/da_lefttop.jpg" alt="" /><img
-          src="images/da_leftmenu01.jpg"
-          alt=""
-        />
+        <h2><img src="images/da_leftmenu01.jpg" alt="" /></h2>
         <h2><img src="images/da_leftmenu02.jpg" alt="" /></h2>
-        <h2><img src="images/da_leftmenu03.jpg" alt="" /></h2>
-        <h2><img src="images/da_leftmenu03.jpg" alt="" /></h2>
         <h2><img src="images/da_leftmenu03.jpg" alt="" /></h2>
         <h2><img src="images/da_leftmenu12.jpg" alt="" /></h2>
         <h2><img src="images/da_leftmenu14.jpg" alt="" /></h2>
         <h2><img src="images/da_leftmenu15.jpg" alt="" /></h2>
-        <h2><img src="images/da_leftmenu16.jpg" alt="" /></h2>
+        <h2><img src="images/da_leftmenu15.jpg" alt="" /></h2>
+        <h2><img src="images/da_lefttop.jpg" alt="" /></h2>
         <h2 class="last"><img src="images/da_leftcenter.jpg" alt="" /></h2>
       </div>
       <div class="section">
-       <h1><img src="images/강사회원.png" alt=""></h1></div>
-       <div class="cate"><img src="images/da_tabtitle.gif" alt=""></div>
-       <div class="write"></div>
-       <div class="sub"></div>
+        <h1><img src="images/강사회원.png" alt="" /></h1>
+        <div class="cate">
+          <img src="images/da_tabtitle.gif" alt="카테고리" class="img"/>
+        </div>
+        <div class="write">
+          <ul class="list">
+            <li>
+              <div class="cell">아이디</div>
+              <div class="cell wd"><input type="text" /></div>
+            </li>
+            <li>
+              <div class="cell">비밀번호</div>
+              <div class="cell wd"><input type="password" /></div>
+            </li>
+            <li>
+              <div class="cell">이메일</div>
+              <div class="cell wd">
+                <p><input type="email" /></p>
+                <p>
+                  뉴스를 받으시겠습니까?
+                  <input type="radio" name="news" id="yes" />
+                  <label for="yes">수산동의</label>
+                  <input type="radio" name="news" id="no" />
+                  <label for="no">동의안함</label>
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="cell">관심정보</div>
+              <div class="cell wd">
+                <input type="checkbox" name="info" id="info1" />
+                <label for="info1">자격증강의</label>
+                <input type="checkbox" name="info" id="info2" />
+                <label for="info2">대학특강</label>
+                <input type="checkbox" name="info" id="info3" />
+                <label for="info3">기업체출강</label>
+              </div>
+            </li>
+            <li>
+              <div class="cell">메모</div>
+              <div class="cell wd">
+                <textarea name="memo" id="memo" cols="50" rows="5"></textarea>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub">
+          <button>확인</button>
+          <input type="reset" value="취소" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
